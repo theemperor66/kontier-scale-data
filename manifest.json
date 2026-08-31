@@ -1,0 +1,42 @@
+{
+  "dataset": "billing_events",
+  "totalRows": 100000000,
+  "partitioning": "hive (quarter=YYYY-Qn)",
+  "compression": "ZSTD, row groups of 4,000,000 rows",
+  "generator": "https://github.com/theemperor66/kontier-ri/blob/main/scripts/generate-scale-data.sh",
+  "totalBytes": 510748390,
+  "files": [
+    {
+      "path": "events/quarter=2024-Q1/part-0.parquet",
+      "bytes": 42404511
+    },
+    {
+      "path": "events/quarter=2024-Q2/part-0.parquet",
+      "bytes": 48557185
+    },
+    {
+      "path": "events/quarter=2024-Q3/part-0.parquet",
+      "bytes": 54598588
+    },
+    {
+      "path": "events/quarter=2024-Q4/part-0.parquet",
+      "bytes": 60748357
+    },
+    {
+      "path": "events/quarter=2025-Q1/part-0.parquet",
+      "bytes": 67075741
+    },
+    {
+      "path": "events/quarter=2025-Q2/part-0.parquet",
+      "bytes": 73052106
+    },
+    {
+      "path": "events/quarter=2025-Q3/part-0.parquet",
+      "bytes": 79175098
+    },
+    {
+      "path": "events/quarter=2025-Q4/part-0.parquet",
+      "bytes": 85136804
+    }
+  ]
+}
